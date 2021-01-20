@@ -19,12 +19,12 @@
   },
   "autoload": {
     "psr-4": {
-      "uguryildiz\\content\\": "src"
+      "abdulkadirbir\\content\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "uguryildiz\\content\\tests\\": "tests"
+      "abdulkadirbir\\content\\tests\\": "tests"
     }
   },
   "repositories": [
