@@ -1,0 +1,36 @@
+{
+  "name": "abdulkadirbir/yii2-project",
+  "description": "Yii2 Content Module",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "abdulkadirbir",
+      "email": "abdulkadirbirr@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "yiisoft/yii2": "~2.0.13"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "8.*.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "uguryildiz\\content\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "uguryildiz\\content\\tests\\": "tests"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
