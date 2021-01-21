@@ -36,45 +36,39 @@ Bu aşamaya kadar geldiyseniz başarılı bir şekilde modülü projenize eklemi
         ]
     ],` 
     Bu kodları `return` fonksiyonu altında bu şekilde düzeltiniz.  
- 3.
+ 3. `php yii migrate` Bu komutu çalıştırmadan önce projede tanımlı olan veritabanıyla aynı isimde veritabanı oluşturduğunuzdan emin olun.
+ 4. `php yii migrate/up --migrationPath=@vendor/abdulkadirbir/yii2-content/src/migrations` Bu komutla beraber veritabanına ait işlemleri bitirmiş olacaksınız.
+ 5. Tebrikler. Artık web tarayıcınızdan `http://size/ait/alan/adi/backend/web/index.php?r=content/evsahibi/index` komutu ile mahalleye gelmiş olan ve ev sahibi olanları görüntüleyebilirsiniz. Ayrıca Yeni kişi ekleyebilirsiniz. Aynı işlemleri kiracılar üzerinden yapmak için de aşağıda ki komutu deneyebilirsiniz.
+ 
+ `http://size/ait/alan/adi/backend/web/index.php?r=content/kiraci/index`
 
-## ## Firebase Hesap İşlemleri
-Uygulamanın düzgün bir şekilde çalışabilmesi için Firebase'de google hesabı oluşturulması gerekmektedir. Halihazırda örnek bir hesaba bağlı olan uygulama kullanıcının dileğine göre başka bir hesapla bağlanabilir. Bunun için gerekli config ayarlamaları yapılmalıdır. Bu işlemler sırasıyla şöyledir:
-- Firebase google hesabı açılır. "Konsola Git" bölümünden yeni bir web projesi oluşturulur.
-- Daha sonra "Authentication" bölümüne girilir. Burada başlat dedikten sonra ayar bölümünde email kısmını aktif etmek gerekir.
-- "Firestore Cloud" bölümü de aynı şekilde aktif edilir.
-- "Database" bölümü de aktif edildikten sonra projenin web uygulaması ayarlarına girilir ve orada CDN kodları kopyalanır.
-- Uygulamanın içerisinde "firebase.ts" dosyasında var olan config ayarlarıyla yer değiştirilir. Bu işlemleri başarılı bir şekilde yaptıktan sonra uygulamanın bu aşaması tamamlanmış olur.
 
 ## Ekran Görüntüleriyle Birlikte Açıklamalar
-1.Kullanıcı uygulamayı ilk çalıştırdığında karşısına bu şekilde çıkmaktadır. Kullanıcının hesabı varsa giriş yapabilir. Eğer hesabı yoksa "Kayıt Ol" butonuyla kayıt sayfasına geçebilir.
+1.Veritabanı tablolarının ilişkileri gösterilmiştir. Projenin eksik kısımları yukarıda anlatıldığı gibi üç tablo arasındaki ilişki gerçekleştirilmemiş olup sadece ikisi arasında vardır bu ilişki.
 
-![](screenshots/Screenshot_12.png)
+![](imgs/Screenshot_1.png)
 
-2.Bu sayfadan kullanıcı firebasede bulunan hesap üzerine kayıt olabilir.
+2.Mahallede kiracı olan insanların listelendiği sayfadır. Eğer yeni bir kiracı eklemek isterseniz `Mahalleye Kiracı Ekle` butonuna basmanız yeterli olacaktır. Eğer silmek isterseniz sağ tarafta bulunan çöp kutusu ikonu size yardımcı olacaktır.
 
-![](screenshots/Screenshot_16.png)
+![](imgs/Screenshot_2.png)
 
-3.Başarılı bir şekilde giriş yapıldıktan sonra kullanıcıya bir alert gösterilmektedir. Daha sonra da "Anasayfa" açılmaktadır.Bu bölümde veritabanındaki satılık araçlar listelenebilir. Kiralık araçlar listelenebilir. Veya yeni bir araç eklenebilir.
+3.Bu sayfada yeni bir kiracı ekleyebilirsiniz.
 
-![](screenshots/Screenshots_14.png)
+![](imgs/Screenshots_3.png)
 
-4. Satılık araçların listesi.
+4. Mahallede ev sahibi olan insanların listelendiği sayfadır. Eğer yeni bir ev sahibi eklemek isterseniz `Mahalleye Ev Sahibi Ekle` butonuna basmanız yeterli olacaktır. Eğer silmek isterseniz sağ tarafta bulunan çöp kutusu ikonu size yardımcı olacaktır.
 
-![](screenshots/Screenshot_13.png)
+![](imgs/Screenshot_4.png)
 
-5.Kiralık araçların listesi
+5.Bu sayfada yeni bir ev sahibi ekleyebilirsiniz.
 
-![](screenshots/Screenshot_14.png)
+![](imgs/Screenshot_5.png)
 
-6. Araç Ekleme Sayfası
+6. Veritabanına başarılı bir şekilde ekleme yapıldığı aşağıdaki görselde gösterilmiştir.
 
-![](screenshots/Screenshot_15.png)
+![](imgs/Screenshot_6.png)
 
-7. Firebase'de veritabanının görüntüsü
-
-![](screenshots/Screenshot_17.png)
 
 
 # SONUÇ 
-Uygulama Kocaeli Üniversitesi Mobil Programlama dersi için geliştirilmiştir. Projede istenen isterlerin bir çoğunu karşılamakta olup düzgün bir şekilde çalışmaktadır. Bazı sıkıntılı işlevlerden Özet başlığı altında bahsedilmiştir.
+Uygulama Kocaeli Üniversitesi İnternet Programcılığı dersi için geliştirilmiştir. Proje düzgün bir şekilde çalışmakta olup planlanan projeye göre eksik kalan kısımlar yukarıdaki başlıklarda belirtilmiştir.
