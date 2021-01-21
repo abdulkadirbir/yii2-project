@@ -54,7 +54,7 @@ Bu aşamaya kadar geldiyseniz başarılı bir şekilde modülü projenize eklemi
 
 3.Bu sayfada yeni bir kiracı ekleyebilirsiniz.
 
-![](imgs/Screenshots_3.png)
+![](imgs/Screenshot_3.png)
 
 4. Mahallede ev sahibi olan insanların listelendiği sayfadır. Eğer yeni bir ev sahibi eklemek isterseniz `Mahalleye Ev Sahibi Ekle` butonuna basmanız yeterli olacaktır. Eğer silmek isterseniz sağ tarafta bulunan çöp kutusu ikonu size yardımcı olacaktır.
 
