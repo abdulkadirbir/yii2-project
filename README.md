@@ -30,15 +30,14 @@ Bu bölümde bilgisayarınızda kurulması gereken paketler belirtilmiştir.Lüt
 ## Uygulamanın Çalıştırılması
 Bu aşamaya kadar geldiyseniz başarılı bir şekilde modülü projenize eklemiş bulunmaktasınız. Bu aşamadan sonra bir kaç config ayarı yapılacaktır. Sırasıyla:
 1. `../backend/config/main.php` dosyasına gidiniz.
-2. `'modules' => [
+2. ``'modules' => [
 
         'content' => [
         
            'class' => 'abdulkadirbir\content\Module'
            
         ]
-        
-     ],
+        ], 
     
     Bu kodları `return` fonksiyonu altında bu şekilde düzeltiniz.  
 
