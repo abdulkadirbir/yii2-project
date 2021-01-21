@@ -31,10 +31,16 @@ Bu bölümde bilgisayarınızda kurulması gereken paketler belirtilmiştir.Lüt
 Bu aşamaya kadar geldiyseniz başarılı bir şekilde modülü projenize eklemiş bulunmaktasınız. Bu aşamadan sonra bir kaç config ayarı yapılacaktır. Sırasıyla:
 1. `../backend/config/main.php` dosyasına gidiniz.
 2. `'modules' => [
-        ``'content' => [
-           ``'class' => 'abdulkadirbir\content\Module'
-     ``   ]
-    ``], `` Bu kodları `return` fonksiyonu altında bu şekilde düzeltiniz.  
+
+        'content' => [
+        
+           'class' => 'abdulkadirbir\content\Module'
+           
+        ]
+        
+     ],
+    
+    Bu kodları `return` fonksiyonu altında bu şekilde düzeltiniz.  
 
 ## ## Firebase Hesap İşlemleri
 Uygulamanın düzgün bir şekilde çalışabilmesi için Firebase'de google hesabı oluşturulması gerekmektedir. Halihazırda örnek bir hesaba bağlı olan uygulama kullanıcının dileğine göre başka bir hesapla bağlanabilir. Bunun için gerekli config ayarlamaları yapılmalıdır. Bu işlemler sırasıyla şöyledir:
