@@ -22,7 +22,7 @@ Modülü bilgisayarınıza kurmadan önce lütfen vagrant kurulumunu, sanal sunu
 
 ## Gerekli Paketler
 Bu bölümde bilgisayarınızda kurulması gereken paketler belirtilmiştir.Lütfen açıklamalara dikkat ediniz :
-- `ssh -i .vagrant\machines\ornekMakine\virtualbox\private_key vagrant@advanced` Bu komutu çalıştırmadan önce editörünüzde vagrantı ayağa kaldırmış olmanız gerekmektedir. Sonrasında ise vagrantın kurulu olduğu dizinde çalıştırılmalıdır.
+- `ssh -i .vagrant\machines\sizinMakinenizinAdı\virtualbox\private_key vagrant@advanced` Bu komutu çalıştırmadan önce editörünüzde vagrantı ayağa kaldırmış olmanız gerekmektedir. Sonrasında ise vagrantın kurulu olduğu dizinde çalıştırılmalıdır.
 - `cd /var/www/advanced/` Bu komut ile projenizin bulunduğu dizin açılacaktır.
 - `composer require --prefer-dist abdulkadirbir/yii2-project "*" ` Bu komut Github'dan gerekli modülü indirecektir. Eğer hata alırsanız aşağıdaki komutu deneyiniz.
 - `composer require --prefer-dist abdulkadirbir/yii2-project "dev-main"` Bu komuttan sonra modül projenize `../vendor` klasörü altında otomatik olarak inmiş bulunacaktır.
