@@ -2,7 +2,7 @@
  
 ## Hazırlayan :
 170201081 - Abdulkadir Bir
-### NOT : 
+### NOT ! : 
 Projede teslim saatinden sonra değişiklik yapılmıştır. Son güncellenme tarihi 21.01.2021 22:50'dir.
 
 ## Özet
